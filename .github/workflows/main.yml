@@ -1,5 +1,9 @@
 name: Check the source code
 on:
+  # 만약 브랜치 구분 없이 이벤트를 지정하고 싶을 경우에는 단순히 아래와 같이 작성도 가능합니다.
+  # on: [push, pull_request]
+  push:
+    branches: [develop]
   pull_request: #pr 시에 한다.
     branches:
       - main #main 브랜치에 할때
